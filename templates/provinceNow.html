@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>中国各省疫情实时情况</title>
+
+    <!-- Favicons -->
+    <link href="static/assets/img/favicon.ico" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900"
+          rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="static/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="static/assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="static/assets/css/style.css" rel="stylesheet">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+    <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+    <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/china.js"></script>
+
+</head>
+
+<body>
+
+<!-- ======= 头部 ======= -->
+<header id="header">
+    <div class="container">
+
+        <div class="logo float-left">
+            <img src="static/assets/img/favicon.ico" alt="" class="img-fluid">
+        </div>
+
+        <nav class="nav-menu float-right d-none d-lg-block">
+            <ul>
+                <li><a href="/index">首页</a></li>
+                <li><a href="/movie">电影</a></li>
+                <li><a href="/score">评分</a></li>
+                <li><a href="/word">词云</a></li>
+
+                <!-- ======= 疫情 ======= -->
+                <li class="drop-down"><a href="">疫情</a>
+                    <ul>
+                        <li class="drop"><a href="/province31">中国近期31省区市病例</a></li>
+                        <li class="drop"><a href="/address">中国各省疫情风险地区</a></li>
+                        <li class="drop active"><a href="/provinceNow">中国各省疫情实时情况<i class="la la-angle-down"></i></a></li>
+                        <li class="drop"><a href="/provinceHistory">中国各省疫情历史数据分析</a></li>
+                    </ul>
+                </li>
+
+                <!-- ======= 关于 ======= -->
+                <li class="drop-down"><a href="">关于</a>
+                    <ul>
+
+                        <li class="drop-down"><a href="#">pepsi-wyl</a>
+                            <ul>
+                                <a href="#" class="phone">
+                                    <i class="icofont-phone"> 136 7333 0837 </i>
+                                </a>
+                                <a href="/static/assets/img/qq.png" class="qq" target="_blank">
+                                    <i class="icofont-qq"> 2322535585 </i>
+                                </a>
+                                <a href="/static/assets/img/wechat.jpg" class="wechat" target="_blank">
+                                    <i class="icofont-wechat"> wyl15236596738 </i>
+                                </a>
+                                <a href="https://mail.qq.com/" target="_blank">
+                                    <i class="icofont-email"> 2322535585@qq.com </i>
+                                </a>
+                                <a href="https://github.com/pepsi-wyl" class="github" target="_blank">
+                                    <i class="icofont-github">GitHub | pepsi-wyl</i>
+                                </a>
+                            </ul>
+                        </li>
+
+                        <li class="drop-down"><a href="#">锋芒工作室</a>
+                            <ul>
+                                <li><a href="#">关于工作室</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+
+            </ul>
+        </nav><!-- .nav-menu -->
+
+    </div>
+</header><!-- End Header -->
+
+<!-- ======= 内容 ======= -->
+<section id="team" class="team">
+    <div class="container">
+        <section class="counts section-bg">
+
+            <div id="1ba033cb2ae24d458d8c6079805cbe0f" class="chart-container"
+                 style="width:1000px; height:880px;"></div>
+            <script type="text/javascript">
+                var chart_1ba033cb2ae24d458d8c6079805cbe0f = echarts.init(
+                    document.getElementById('1ba033cb2ae24d458d8c6079805cbe0f'), 'white', {renderer: 'canvas'});
+                var option_1ba033cb2ae24d458d8c6079805cbe0f = {
+                    "animation": true,
+                    "animationThreshold": 2000,
+                    "animationDuration": 1000,
+                    "animationEasing": "cubicOut",
+                    "animationDelay": 0,
+                    "animationDurationUpdate": 300,
+                    "animationEasingUpdate": "cubicOut",
+                    "animationDelayUpdate": 0,
+                    "color": [
+                        "#c23531",
+                        "#2f4554",
+                        "#61a0a8",
+                        "#d48265",
+                        "#749f83",
+                        "#ca8622",
+                        "#bda29a",
+                        "#6e7074",
+                        "#546570",
+                        "#c4ccd3",
+                        "#f05b72",
+                        "#ef5b9c",
+                        "#f47920",
+                        "#905a3d",
+                        "#fab27b",
+                        "#2a5caa",
+                        "#444693",
+                        "#726930",
+                        "#b2d235",
+                        "#6d8346",
+                        "#ac6767",
+                        "#1d953f",
+                        "#6950a1",
+                        "#918597"
+                    ],
+                    "series": [
+                        {
+                            "type": "map",
+                            "name": "\u7d2f\u8ba1\u786e\u8bca\u4eba\u6570",
+                            "label": {
+                                "show": true,
+                                "position": "top",
+                                "margin": 8
+                            },
+                            "mapType": "china",
+                            "data": {{ dataList|tojson }},
+                            {#"data": [{'name': '湖北', 'value': 68320}, {'name': '台湾', 'value': 17624}, {'name': '香港', 'value': 12821}, {'name': '广东', 'value': 3602}, {'name': '上海', 'value': 3403}, {'name': '陕西', 'value': 2804}, {'name': '河南', 'value': 2234}, {'name': '浙江', 'value': 2090}, {'name': '黑龙江', 'value': 2035}, {'name': '云南', 'value': 1838}, {'name': '江苏', 'value': 1629}, {'name': '河北', 'value': 1458}, {'name': '福建', 'value': 1434}, {'name': '四川', 'value': 1345}, {'name': '湖南', 'value': 1229}, {'name': '北京', 'value': 1222}, {'name': '内蒙古', 'value': 1191}, {'name': '山东', 'value': 1050}, {'name': '安徽', 'value': 1009}, {'name': '新疆', 'value': 981}, {'name': '江西', 'value': 959}, {'name': '辽宁', 'value': 802}, {'name': '天津', 'value': 752}, {'name': '广西', 'value': 677}, {'name': '重庆', 'value': 611}, {'name': '吉林', 'value': 590}, {'name': '甘肃', 'value': 356}, {'name': '山西', 'value': 266}, {'name': '海南', 'value': 190}, {'name': '贵州', 'value': 160}, {'name': '宁夏', 'value': 122}, {'name': '澳门', 'value': 79}, {'name': '青海', 'value': 30}, {'name': '西藏', 'value': 1}],#}
+                            "roam": true,
+                            "zoom": 1,
+                            "showLegendSymbol": false,
+                            "emphasis": {}
+                        }
+                    ],
+                    "legend": [
+                        {
+                            "data": [
+                                "\u7d2f\u8ba1\u786e\u8bca\u4eba\u6570"
+                            ],
+                            "selected": {
+                                "\u7d2f\u8ba1\u786e\u8bca\u4eba\u6570": true
+                            },
+                            "show": false,
+                            "padding": 5,
+                            "itemGap": 10,
+                            "itemWidth": 25,
+                            "itemHeight": 14
+                        }
+                    ],
+                    "tooltip": {
+                        "show": true,
+                        "trigger": "item",
+                        "triggerOn": "mousemove|click",
+                        "axisPointer": {
+                            "type": "line"
+                        },
+                        "showContent": true,
+                        "alwaysShowContent": false,
+                        "showDelay": 0,
+                        "hideDelay": 100,
+                        "textStyle": {
+                            "fontSize": 14
+                        },
+                        "borderWidth": 0,
+                        "padding": 5
+                    },
+                    "title": [
+                        {
+                            "text": "\u4e2d\u56fd\u75ab\u60c5\u5730\u56fe\u5206\u5e03",
+                            "left": "center",
+                            "top": "10px",
+                            "padding": 5,
+                            "itemGap": 10
+                        }
+                    ],
+                    "visualMap": {
+                        "show": true,
+                        "type": "piecewise",
+                        "min": 0,
+                        "max": 200,
+                        "inRange": {
+                            "color": [
+                                "#50a3ba",
+                                "#eac763",
+                                "#d94e5d"
+                            ]
+                        },
+                        "calculable": true,
+                        "inverse": false,
+                        "splitNumber": 5,
+                        "orient": "vertical",
+                        "showLabel": true,
+                        "itemWidth": 20,
+                        "itemHeight": 14,
+                        "borderWidth": 0,
+                        "pieces": [
+                            {
+                                "max": 999999,
+                                "min": 1001,
+                                "label": ">10000",
+                                "color": "#8A0808"
+                            },
+                            {
+                                "max": 9999,
+                                "min": 1000,
+                                "label": "1000-9999",
+                                "color": "#B40404"
+                            },
+                            {
+                                "max": 999,
+                                "min": 100,
+                                "label": "100-999",
+                                "color": "#DF0101"
+                            },
+                            {
+                                "max": 99,
+                                "min": 10,
+                                "label": "10-99",
+                                "color": "#F78181"
+                            },
+                            {
+                                "max": 9,
+                                "min": 1,
+                                "label": "1-9",
+                                "color": "#F5A9A9"
+                            },
+                            {
+                                "max": 0,
+                                "min": 0,
+                                "label": "0",
+                                "color": "#FFFFFF"
+                            }
+                        ]
+                    }
+                };
+                chart_1ba033cb2ae24d458d8c6079805cbe0f.setOption(option_1ba033cb2ae24d458d8c6079805cbe0f);
+            </script>
+
+            <div id="container" style="height: 1000px"></div>
+            <script type="text/javascript">
+                var dom = document.getElementById("container");
+                var myChart = echarts.init(dom);
+                var app = {};
+                var option;
+                option = {
+                    tooltip: {
+                        trigger: 'axis',
+                        axisPointer: {
+                            type: 'shadow'
+                        }
+                    },
+                    legend: {
+                        data: ['累计确诊', '累计治愈', '累计死亡', '新增确诊', '新增治愈', '新增死亡']
+                    },
+                    grid: {
+                        left: '3%',
+                        right: '4%',
+                        bottom: '3%',
+                        containLabel: true
+                    },
+                    xAxis: [
+                        {
+                            type: 'value'
+                        }
+                    ],
+                    yAxis: [
+                        {
+                            type: 'category',
+                            axisTick: {
+                                show: false
+                            },
+                            data: {{ cityList|tojson }}
+                        }
+                    ],
+                    series: [
+                        {
+                            name: '累计确诊',
+                            type: 'bar',
+                            label: {
+                                show: true,
+                                position: 'right'
+                            },
+                            emphasis: {
+                                focus: 'series'
+                            },
+                            data: {{ confirmList }}
+                        },
+                        {
+                            name: '累计治愈',
+                            type: 'bar',
+                            stack: 'Total',
+                            label: {
+                                show: true,
+                                position: 'inside'
+                            },
+                            emphasis: {
+                                focus: 'series'
+                            },
+                            data: {{ healList }}
+                        },
+                        {
+                            name: '累计死亡',
+                            type: 'bar',
+                            label: {
+                                show: true,
+                                position: 'inside'
+                            },
+                            emphasis: {
+                                focus: 'series'
+                            },
+                            data: {{ deadList }}
+                        },
+                        {
+                            name: '新增确诊',
+                            type: 'bar',
+                            stack: 'Total',
+                            label: {
+                                show: true,
+                                position: 'left'
+                            },
+                            emphasis: {
+                                focus: 'series'
+                            },
+                            data: {{ newConfirmList }}
+                        },
+                        {
+                            name: '新增治愈',
+                            type: 'bar',
+                            stack: 'Total',
+                            label: {
+                                show: true,
+                                position: 'left'
+                            },
+                            emphasis: {
+                                focus: 'series'
+                            },
+                            data: {{ newHealList }}
+                        },
+                        {
+                            name: '新增死亡',
+                            type: 'bar',
+                            stack: 'Total',
+                            label: {
+                                show: true,
+                                position: 'left'
+                            },
+                            emphasis: {
+                                focus: 'series'
+                            },
+                            data: {{ newDeadList }}
+                        }
+
+                    ]
+                };
+                if (option && typeof option === 'object') {
+                    myChart.setOption(option);
+                }
+            </script>
+
+        </section>
+    </div>
+</section>
+
+
+<!-- ======= 页脚 ======= -->
+<footer id="footer">
+    <div class="container">
+        <div class="copyright">
+            Designed by pepsi-wyl.
+        </div>
+        <div class="copyright">
+            &copy; 2022 <strong><span> 锋芒工作室 </span></strong>. All Rights Reserved.
+        </div>
+    </div>
+</footer>
+
+
+<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="static/assets/vendor/jquery/jquery.min.js"></script>
+<script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="static/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+<script src="static/assets/vendor/php-email-form/validate.js"></script>
+<script src="static/assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+<script src="static/assets/vendor/venobox/venobox.min.js"></script>
+<script src="static/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+<script src="static/assets/vendor/counterup/counterup.min.js"></script>
+<script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="static/assets/vendor/aos/aos.js"></script>
+
+<!-- Template Main JS File -->
+<script src="static/assets/js/main.js"></script>
+
+</body>
+
+</html>
